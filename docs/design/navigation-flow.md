@@ -8,8 +8,8 @@ Representar de forma visual e descritiva todos os caminhos possíveis que um usu
 
 ### **Fluxo Geral**
 
-```
-mermaidCopiarEditarflowchart TD
+```mermaid
+flowchart TD
     A[Tela de Boas-vindas] --> B[Escolha: Entrar ou Criar Conta]
     B -->|Criar Conta| C[Cadastro de Usuário]
     B -->|Entrar| D[Login]
