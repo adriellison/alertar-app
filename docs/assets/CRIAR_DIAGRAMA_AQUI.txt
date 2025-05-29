@@ -1,0 +1,27 @@
+# Orientações para Criação da Imagem "hybrid-architecture.png"
+
+Para representar a arquitetura híbrida de banco de dados do Alertar App, por favor crie uma imagem no estilo do diagrama fornecido anteriormente, contendo os seguintes elementos:
+
+1. Aplicativo Móvel (Flutter) no topo
+2. Três bancos de dados conectados ao aplicativo:
+   - PostgreSQL (via Neon, Supabase ou Railway) - armazenamento principal
+   - Firebase Realtime Database - sincronização rápida
+   - SQLite (local no dispositivo) - cache e persistência offline
+
+3. Adicione setas indicando o fluxo de dados entre os componentes:
+   - Aplicativo → SQLite (armazenamento local)
+   - Aplicativo → Firebase (sincronização em tempo real)
+   - Aplicativo → PostgreSQL (persistência de longa duração)
+   - Firebase → Aplicativo (notificações e atualizações em tempo real)
+
+4. Use cores distintas para cada banco de dados:
+   - PostgreSQL: azul escuro ou verde
+   - Firebase: amarelo ou laranja
+   - SQLite: azul claro ou cinza
+
+5. Inclua legendas descrevendo o propósito principal de cada banco de dados:
+   - PostgreSQL: "Armazenamento principal"
+   - Firebase: "Sincronização em tempo real"
+   - SQLite: "Persistência local offline"
+
+Salve a imagem como "hybrid-architecture.png" na pasta docs/assets.
