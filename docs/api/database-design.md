@@ -73,7 +73,7 @@ O banco de dados PostgreSQL é composto por três entidades principais:
 
 ### Diagrama ER
 
-```marmeid
+```plaintext
 +----------------+       +----------------+       +-------------------+
 |     Users      |       |     Alerts     |       |  TrustedContacts  |
 +----------------+       +----------------+       +-------------------+
@@ -88,8 +88,7 @@ O banco de dados PostgreSQL é composto por três entidades principais:
 | LastLogin      |       +----------------+       | IsActive          |
 | IsActive       |                                +-------------------+
 +----------------+
-```
-
+```sql\n
 ## Detalhamento das Tabelas
 
 ### Users
@@ -221,4 +220,4 @@ CREATE INDEX IX_Alerts_CreatedAt ON Alerts(CreatedAt);
 
 CREATE INDEX IX_TrustedContacts_UserId ON TrustedContacts(UserId);
 CREATE INDEX IX_TrustedContacts_IsActive ON TrustedContacts(IsActive);
-```
+```sql\n

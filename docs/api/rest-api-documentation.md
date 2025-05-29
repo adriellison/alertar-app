@@ -6,7 +6,7 @@ Esta documentação descreve a API RESTful do Alertar App, seguindo as melhores 
 
 ## Base URL
 
-```
+```http
 https://api.alertarapp.com/v1
 ```
 
@@ -14,7 +14,7 @@ https://api.alertarapp.com/v1
 
 A API utiliza autenticação JWT (JSON Web Token). Para acessar endpoints protegidos, inclua o token no cabeçalho HTTP:
 
-```
+```http
 Authorization: Bearer {seu_token_jwt}
 ```
 
@@ -85,7 +85,7 @@ Endpoints que retornam múltiplos itens são paginados. A resposta incluirá:
 
 #### Login
 
-```
+```http
 POST /auth/login
 ```
 

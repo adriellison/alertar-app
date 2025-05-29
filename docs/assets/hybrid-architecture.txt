@@ -1,0 +1,32 @@
+```ascii
+                   +-----------------------------------+
+                   |                                   |
+                   |        APP MOBILE (Flutter)       |
+                   |                                   |
+                   +---+-------------------------+-----+
+                       |                         |
+                       |                         |
+           +-----------v---------+   +-----------v-----------+
+           |                     |   |                       |
+           |      SQLite         |   |    Firebase Realtime  |
+           |  Cache & Offline    |   |      Database         |
+           |                     |   |                       |
+           +---------------------+   +-----------+-----------+
+                                                 |
+                                                 |
+                    +----------------------------v----------+
+                    |                                       |
+                    |             PostgreSQL                |
+                    |        Persistência Principal         |
+                    |                                       |
+                    +---------------------------------------+
+
+Legenda:
+→ Fluxo de dados principal
+⟲ Sincronização bidirecional
+
+Características:
+- SQLite: Armazenamento local para funcionamento offline e cache de dados
+- Firebase: Sincronização em tempo real e notificações
+- PostgreSQL: Armazenamento principal, persistência de longa duração
+```

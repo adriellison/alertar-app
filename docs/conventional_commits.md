@@ -6,7 +6,7 @@ Este guia segue a especificação oficial do [Conventional Commits 1.0.0](https:
 
 Cada mensagem de commit deve seguir o seguinte formato:
 
-```csharp
+```plaintext
 <tipo>[escopo opcional]: <descrição breve>
 
 [corpo opcional]
